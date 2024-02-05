@@ -1,0 +1,71 @@
+.dishes-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-image: linear-gradient(to right, #fff6af, #ffd3d3);
+}
+.dishes {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.dishes-images {
+  width: 500px;
+  height: 400px;
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.column img {
+  flex: 1;
+  height: 50%;
+  padding: 1rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.buy-dishes {
+  max-width: 450px;
+  background-color: #ff7373;
+  padding: 1.5rem;
+}
+
+.buy-dishes > h1 {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+.buy-dishes > div {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .dishes {
+    flex-direction: column;
+  }
+  .dishes-images {
+    flex-direction: column;
+  }
+
+  .column {
+    flex: none;
+    width: 100%;
+  }
+
+  .column img {
+    height: 200px; /* Set a maximum height for the images */
+    width: 100%; /* Ensure images take full width of the column */
+    object-fit: cover;
+    object-position: center;
+  }
+}
