@@ -1,0 +1,8 @@
+main {
+  min-height: calc(100% - 50px);
+  background-color: lightpink;
+}
+.hero {
+  height: 100%;
+  display: flex;
+}
