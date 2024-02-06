@@ -51,21 +51,35 @@
 
 @media only screen and (max-width: 1024px) {
   .dishes {
+    display: flex;
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .buy-dishes {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .dishes-container {
+    padding: 0;
+  }
+  .dishes {
+    width: 100%;
+    height: auto;
   }
   .dishes-images {
+    width: 73vw;
+    height: auto;
+    display: flex;
     flex-direction: column;
-  }
-
-  .column {
-    flex: none;
-    width: 100%;
-  }
-
-  .column img {
-    height: 200px; /* Set a maximum height for the images */
-    width: 100%; /* Ensure images take full width of the column */
-    object-fit: cover;
-    object-position: center;
-  }
+}
+.buy-dishes {
+  width: 70vw;
+  margin: 1rem;
+}
+.buy-dishes > h1 {
+  font-size: 2rem;
+}
 }
